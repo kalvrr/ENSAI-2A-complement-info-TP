@@ -9,8 +9,7 @@ class DefenderPokemon(AbstractPokemon):
             stat_current=stat_current,
             level=level,
             name=name,
-            type="Defender"
-        )
+            type="Defender")
 
     def get_pokemon_attack_coef(self) -> float:
         multiplier = 1 + (self.attack_current + self.defense_current) / 200
